@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://bilmuh.ksbu.edu.tr/app/views/panel/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/regular.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css"
+    />
+
+    <title>Bilgisayar Mühendisliği</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="relative">
+    <button
+      onclick="scrollUp(event)"
+      id="scroll-up"
+      class="fixed bottom-8 right-4 rounded-full w-12 h-12 bg-cyan-600 hover:bg-purple-400 duration-200"
+    >
+      <i class="fa-solid fa-arrow-up text-xl"></i>
+    </button>
+
+    <nav class="my-5" id="navbar">
+      <!-- ========== Üst Menü ========== -->
+
+      <div class="flex px-96 items-start space-x-16 text-sm">
+        <!-- ========== Telefon numarası ========== -->
+        <div class="flex items-center font-bold">
+          <i class="fa-solid fa-square-phone" style="color: #4098b6"></i>
+          <a href="tel:+90 274 260 00 43" class="text-[#4098b6]"
+            >0 (274) 260 00 43</a
+          >
+        </div>
+        <!-- ========== Adres, Konum ve Mail Bilgisi ========== -->
+        <div class="text-gray-500 text-sm">
+          <i class="fa-regular fa-envelope"></i>
+          <a href="mailto:bilmuh@ksbu.edu.tr">bilmuh@ksbu.edu.tr</a>
+          <br />
+          <i class="fa-solid fa-location-dot"></i>
+          Kütahya Sağlık Bilimleri Üniversitesi Germiyan Yerleşkesi
+          <br />
+          Afyonkarahisar Yolu 7. km Merkez/KÜTAHYA
+        </div>
+      </div>
+      <!-- ========== Alt Menü ========== -->
+
+      <div class="flex items-center justify-around mt-10">
+        <div class="flex items-center space-x-6">
+          <img
+            class="h-[90px]"
+            src="https://bilmuh.ksbu.edu.tr/app/views/panel/images/logo.png"
+            alt=""
+          />
+          <p class="text-xl font-normal">BİLGİSAYAR MÜHENDİSLİĞİ</p>
+        </div>
+
+        <div class="flex items-center font-semibold text-gray-500">
+          <p class="hover:border-t-4 border-[#4098b6] p-3 text-sm">Ana Sayfa</p>
+          <p href="" class="hover:border-t-4 border-[#4098b6] p-3 text-sm">
+            KSBU
+          </p>
+
+          <div class="group relative">
+            <p
+              class="group-hover:border-t-4 border-[#4098b6] p-3 text-sm text-sm"
+            >
+              Bilgisayar Mühendisliği
+              <i class="fa-solid fa-caret-down text-xs"></i>
+            </p>
+
+            <ul
+              class="group-hover:block hidden absolute top-8 left-2 w-44 bg-white p-2 text-sm pb-2 space-y-2"
+            >
+              <li class="hover:bg-gray-200 border-b-2 border-gray-200">
+                <a href="https://bilmuh.ksbu.edu.tr/index/sayfa/8582/hakkimizda"
+                  >Hakkımızda</a
+                >
+              </li>
+              <li class="hover:bg-gray-200 border-b-2 border-gray-200">
+                <a
+                  href="https://bilmuh.ksbu.edu.tr/index/sayfa/8583/vizyon-ve-misyon"
+                  >Vizyon ve Misyon</a
+                >
+              </li>
+              <li class="hover:bg-gray-200 border-b-2 border-gray-200">
+                <a href="https://bilmuh.ksbu.edu.tr/index/sayfa/8584/yonetim">
+                  Yönetim</a
+                >
+              </li>
+              <li class="hover:bg-gray-200 border-b-2 border-gray-200">
+                <a href="https://bilmuh.ksbu.edu.tr/index/sayfa/8600/tanitim"
+                  >Tanıtım</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="group relative">
+            <p class="group-hover:border-t-4 border-[#4098b6] p-3 text-sm">
+              Akademik
+              <i class="fa-solid fa-caret-down text-xs"></i>
+            </p>
+
+            <ul
+              class="group-hover:block hidden absolute top-8 left-2 w-44 bg-white p-2 text-sm pb-2 space-y-2"
+            >
+              <li class="hover:bg-gray-200 border-b-2 border-gray-200">
+                <a
+                  href="https://bilmuh.ksbu.edu.tr/index/sayfa/8606/bilgisayar-muhendisligi-bolumu-anabilim-dallari"
+                >
+                  Bilgisayar Mühendisliği Bölümü Anabilim Dalları</a
+                >
+              </li>
+              <li class="hover:bg-gray-200 border-b-2 border-gray-200">
+                <a
+                  href="https://bilmuh.ksbu.edu.tr/index/sayfa/8585/akademik-kadro"
+                  >Akademik Kadro</a
+                >
+              </li>
+              <li class="hover:bg-gray-200 border-b-2 border-gray-200">
+                <a
+                  href="https://www.ksbu.edu.tr/Website/Contents.aspx?PageID=190&ampLangID=1"
+                >
+                  Akademik Takvim</a
+                >
+              </li>
+              <li class="hover:bg-gray-200 border-b-2 border-gray-200">
+                <a
+                  href="https://bilmuh.ksbu.edu.tr/index/sayfa/8588/ders-listesi"
+                  >Ders Listesi</a
+                >
+              </li>
+              <li class="hover:bg-gray-200 border-b-2 border-gray-200">
+                <a
+                  href="https://bilmuh.ksbu.edu.tr/index/sayfa/8589/ders-programi"
+                  >Ders Programı
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="group relative">
+            <p class="group-hover:border-t-4 border-[#4098b6] p-3 text-sm">
+              Eğitim ve Araştırma
+              <i class="fa-solid fa-caret-down text-xs"></i>
+            </p>
+
+            <ul
+              class="group-hover:block hidden absolute top-8 left-2 w-44 bg-white p-2 text-sm pb-2 space-y-2"
+            >
+              <li class="hover:bg-gray-200 border-b-2 border-gray-200">
+                <a href="https://oys.ksbu.edu.tr/Account/Login?ReturnUrl=%2F">
+                  Uzaktan Eğitim Sistemi</a
+                >
+              </li>
+              <li class="hover:bg-gray-200 border-b-2 border-gray-200">
+                <a
+                  href="https://bilmuh.ksbu.edu.tr/index/sayfa/8624/yonetmelik-ve-yonergeler"
+                >
+                  Yönetmelik ve Yönergeler</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="group relative">
+            <p class="group-hover:border-t-4 border-[#4098b6] p-3 text-sm">
+              Faydalı Bilgiler
+              <i class="fa-solid fa-caret-down text-xs"></i>
+            </p>
+
+            <ul
+              class="group-hover:block hidden absolute top-8 left-2 w-44 bg-white p-2 text-sm pb-2 space-y-2"
+            >
+              <li class="hover:bg-gray-200 border-b-2 border-gray-200">
+                <a
+                  href="https://bilmuh.ksbu.edu.tr/index/sayfa/8617/barinma-imkanlari"
+                >
+                  Barınma İmkanları</a
+                >
+              </li>
+              <li class="hover:bg-gray-200 border-b-2 border-gray-200">
+                <a
+                  href="https://bilmuh.ksbu.edu.tr/index/sayfa/8618/ulasim-olanaklari"
+                >
+                  Ulaşım Olanakları</a
+                >
+              </li>
+              <li class="hover:bg-gray-200 border-b-2 border-gray-200">
+                <a
+                  href="https://bilmuh.ksbu.edu.tr/index/sayfa/8619/burs-olanaklari"
+                  >Burs Olanakları</a
+                >
+              </li>
+              <li class="hover:bg-gray-200 border-b-2 border-gray-200">
+                <a
+                  href="https://bilmuh.ksbu.edu.tr/index/sayfa/8620/temel-yasam-giderleri"
+                  >Temel Yaşam Giderleri</a
+                >
+              </li>
+              <li class="hover:bg-gray-200 border-b-2 border-gray-200">
+                <a
+                  href="https://bilmuh.ksbu.edu.tr/index/sayfa/8622/sikca-sorulan-sorular"
+                  >Sıkça Sorulan Sorular</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="group relative">
+            <p class="group-hover:border-t-4 border-[#4098b6] p-3 text-sm">
+              Galeri
+              <i class="fa-solid fa-caret-down text-xs"></i>
+            </p>
+
+            <ul
+              class="group-hover:block hidden absolute top-8 left-2 w-44 bg-white p-2 text-sm pb-2 space-y-2"
+            >
+              <li class="hover:bg-gray-200 border-b-2 border-gray-200">
+                <a
+                  href="https://bilmuh.ksbu.edu.tr/index/sayfa/8607/foto-galeri"
+                >
+                  Foto Galeri</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="group relative">
+            <p class="group-hover:border-t-4 border-[#4098b6] p-3 text-sm">
+              İletişim Bilgileri
+
+              <i class="fa-solid fa-caret-down text-xs"></i>
+            </p>
+
+            <ul
+              class="group-hover:block hidden absolute top-8 left-2 w-44 bg-white p-2 text-sm pb-2 space-y-2"
+            >
+              <li class="hover:bg-gray-200 border-b-2 border-gray-200">
+                <a
+                  href="https://bilmuh.ksbu.edu.tr/index/sayfa/8586/iletisim-bilgileri"
+                  >İletişim Bilgileri</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="space-y-8 mb-40">
+      <section>
+        <img
+          src="https://medya.ksbu.edu.tr/files/2023/05/02/6450c0159a0e0/20230502105237.jpeg"
+          alt=""
+          class="w-full h-96 object-cover"
+        />
+      </section>
+
+      <!-- ============  Haberler ============ -->
+
+      <section>
+        <h1 class="font-extrabold text-3xl text-gray-600 text-center mb-10">
+          Haberler
+        </h1>
+        <div class="grid grid-cols-4 gap-4 grid-rows-1 mx-56">
+          <div class="shadow-xl rounded hover:scale-105 transition group">
+            <img
+              src="http://medya.ksbu.edu.tr/files/2021/07/16/60f151a13203d/20210716123130.jpeg"
+              alt=""
+              class="rounded"
+            />
+            <div class="px-2 space-y-3 mt-2 mb-8">
+              <a
+                class="font-bold group-hover:text-blue-500"
+                href="https://bilmuh.ksbu.edu.tr/index/slide/5580/bilgisayar-muhendisligi-bolumu-2022-2023-guz-donemi-ders-programi-yayinlanmistir"
+              >
+                Bilgisayar Mühendisliği Bölümü 2022-2023 Güz Dönemi Ders
+                Programı Yayınlanmıştır.</a
+              >
+              <p class="text-gray-400">
+                2022-2023 Eğitim-Öğretim Yılı Bilgisayar Mühendisliği Güz Dönemi
+                Ders Progr..
+              </p>
+            </div>
+          </div>
+
+          <div class="shadow-xl rounded hover:scale-105 transition group">
+            <img
+              src="http://medya.ksbu.edu.tr/files/2022/05/21/628810b389f10/20220521011008.jpeg"
+              alt=""
+              class="rounded"
+            />
+            <div class="px-2 space-y-3 mt-2 mb-8">
+              <a
+                class="font-bold group-hover:text-blue-500"
+                href="https://bilmuh.ksbu.edu.tr/index/slide/5379/dr-ogr-uyesi-emre-gungor-liderliginde-13-15-mayis-2022-tarihlerinde-kutahya-game-jame-katilan-universitemiz-bilgisayar-muhendisligi-bolumu-ogrencilerini-tebrik-ediyoruz"
+              >
+                Dr. Öğr. Üyesi Emre Güngör Liderliğinde 13-15 Mayıs 2022
+                Tarihlerinde Kütahya Game Jam‘e Katılan Üniversitemiz Bilgisayar
+                Mühendisliği Bölümü Öğrencilerini Tebrik Ediyoruz.</a
+              >
+            </div>
+          </div>
+
+          <div class="shadow-xl rounded hover:scale-105 transition group">
+            <img
+              src="http://medya.ksbu.edu.tr/files/2022/09/15/6322d1f9c7342/20220915102210.jpeg"
+              alt=""
+              class="rounded"
+            />
+            <div class="px-2 space-y-3 mt-2 mb-8">
+              <a
+                class="font-bold group-hover:text-blue-500"
+                href="https://bilmuh.ksbu.edu.tr/index/slide/5593/yemek-rezervasyon-sistemi"
+              >
+                Yemek Rezervasyon Sistemi</a
+              >
+              <p class="text-gray-400">
+                BLOK REZERVASYON SİSTEMİ KURALLARI 1. Kullanıcı yemek
+                rezervasyonunu yemek yiyeceği haftanı..
+              </p>
+            </div>
+          </div>
+
+          <div class="shadow-xl rounded hover:scale-105 transition group">
+            <img
+              src="http://medya.ksbu.edu.tr/files/2022/07/26/62dfbb47d6b6e/20220726130354.jpeg"
+              alt=""
+              class="rounded"
+            />
+            <div class="px-2 space-y-3 mt-2 mb-8">
+              <a
+                class="font-bold group-hover:text-blue-500"
+                href="https://bilmuh.ksbu.edu.tr/index/slide/5500/yenilikci-yazilimlar-yarisiyor-y-programi-3-donem-basvurulari-baslamistir"
+              >
+                Yenilikçi Yazılımlar Yarışıyor (Y³) Programı 3. Dönem
+                Başvuruları Başlamıştır.</a
+              >
+              <p class="text-gray-400">
+                Yenilikçi Yazılımlar Yarışıyor (Y³) Programı 3. Dönem
+                yarışmaları&nbs..
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============ Duyurular ve Etkinlikler ============ -->
+
+      <section
+        class="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center place-content-start my-40 mx-56"
+      >
+        <!-- ======== Duyurular  ======== -->
+
+        <div class="w-full flex flex-col items-center">
+          <h2 class="text-center font-bold text-2xl text-slate-600 mb-8">
+            Duyurular
+          </h2>
+          <div class="bg-[#D1E7DD] w-11/12 h-12 rounded flex items-center px-4">
+            <p class="text-sm">Güncel duyurular bulunmamaktadır.</p>
+          </div>
+        </div>
+        <!-- ======== Etkinlikler  ======== -->
+
+        <div class="w-full flex flex-col items-center">
+          <h2 class="text-center font-bold text-2xl text-slate-600 mb-8">
+            Etkinlikler
+          </h2>
+          <div class="bg-[#D1E7DD] w-11/12 h-12 rounded flex items-center px-4">
+            <p class="text-sm">Güncel etkinlik bulunmamaktadır.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer
+      class="bg-[#626362] flex justify-center items-start w-full h-60 px-56"
+    >
+      <div class="w-2/6 flex flex-col items-center justify-center h-full">
+        <h1 class="text-white text-lg text-center">
+          KÜTAHYA SAĞLIK BİLİMLERİ ÜNİVERSİTESİ BİLGİSAYAR MÜHENDİSLİĞİ
+        </h1>
+        <img
+          src="http://tip.ksbu.edu.tr/app/views/panel/images/logo.png"
+          alt=""
+          class="w-24"
+        />
+      </div>
+
+      <div class="w-4/6 flex flex-col items-center h-full py-8">
+        <div class="w-full flex flex-col items-center">
+          <h1 class="text-white text-2xl text-center">Hakkımızda</h1>
+          <div class="flex justify-center items-center w-full my-2">
+            <div class="bg-white w-6 h-px"></div>
+            <div class="bg-cyan-400 w-6 h-1"></div>
+            <div class="bg-white w-2/12 h-px"></div>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <div
+            class="flex justify-center items-center space-x-2 text-slate-300 hover:text-cyan-400"
+          >
+            <i class="fa-solid fa-location-pin"></i>
+            <p class="text-sm text-center">
+              Adres: Kütahya Sağlık Bilimleri Üniversitesi Germiyan Yerleşkesi
+              Afyonkarahisar Yolu 7. km Merkez/KÜTAHYA
+            </p>
+          </div>
+
+          <div
+            class="flex justify-center items-center space-x-2 text-slate-300 hover:text-cyan-400"
+          >
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+90 274 260 00 43" class="">0 (274) 260 00 43</a>
+          </div>
+
+          <div
+            class="flex justify-center items-center space-x-2 text-slate-300 hover:text-cyan-400"
+          >
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:bilmuh@ksbu.edu.tr">bilmuh@ksbu.edu.tr</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
